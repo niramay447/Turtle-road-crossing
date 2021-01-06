@@ -27,6 +27,8 @@ while game_is_on:
         if car.distance(turtle)<20:
             game_is_on = False
 
-
+    # detect a successful crossing
+    if turtle.is_at_finish_line():
+        turtle.go_to_start()
 
 screen.exitonclick()
