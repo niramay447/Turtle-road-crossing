@@ -30,5 +30,6 @@ while game_is_on:
     # detect a successful crossing
     if turtle.is_at_finish_line():
         turtle.go_to_start()
+        car_manager.level_up()
 
 screen.exitonclick()
